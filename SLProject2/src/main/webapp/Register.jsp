@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h3>Register </h3>
+<%
+String uid=request.getParameter("uid");
+String uname = request.getParameter("uname");
+String uage = request.getParameter("uage");
+String usalary =request.getParameter("usalary");
+String udesig=	request.getParameter("udesig");
+
+
+try 
+{
+	Class.forName("com.mysql.jdbc.Driver");
+	Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/simpleylearn","root","root");
+	PreparedStatement stmt= con.prepareStatement("insert into employee values(?,?,?,?,?)");
+	stmt.setString(1, uid);
+	stmt.setString(2, uname);
+	stmt.setString(3, uage);
+	stmt.setString(4, usalary);
+	stmt.setString(5, udesig);
+	stmt.execute();
+	stmt.close();
+	con.close();
+	
+	System.out.println("Data Inserted ...!");
+	response.setContentType("text/html");
+	
+} 
+catch (Exception e) {
+	System.out.println(e);
+}
+%>
+
+</body>
+</html>

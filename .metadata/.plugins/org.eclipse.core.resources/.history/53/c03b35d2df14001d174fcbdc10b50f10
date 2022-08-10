@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgColor="yellow">
+<Div style="text-align: center;">
+	<form action="">
+
+	ID : <input type="text" name="uid"><br> 
+	Name : <input type="text" name="uname"><br>
+	Age :<input type="text" name="uage"><br>
+	Salary  :<input type="text" name="usalary"><br>
+	Designation: <input type="text" name="udesig"><br> 
+
+
+	</form>
+</Div>
+
+</body>
+</html>

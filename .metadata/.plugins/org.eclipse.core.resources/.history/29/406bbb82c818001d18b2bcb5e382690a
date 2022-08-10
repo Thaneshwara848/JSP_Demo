@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" import="java.sql.* "%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%
+		String uid= request.getParameter("uid");		
+		String usalary = request.getParameter("usalary");
+
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee","root","root");
+			PreparedStatement stmt=con.prepareStatement("insert into myemps values(?,?,?,?,?)");
+			stmt.setString(1,uid);
+			
+			stmt.setString(4,usalary);
+			
+			stmt.execute();
+			stmt.close();
+			con.close();			
+		}
+		catch(Exception e)
+		{
+			System.out.print(e);
+		}
+		
+
+%>
+%>
+
+</body>
+</html>

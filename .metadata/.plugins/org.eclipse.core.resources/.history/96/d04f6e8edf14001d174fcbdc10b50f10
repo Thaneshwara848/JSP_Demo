@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="">
+
+	ID : <input type="text" name="uid"><br> 
+	Name : <input type="text" name="uname"><br>
+	Age :<input type="text" name="uage"><br>
+	Salary  :<input type="text" name="usalary"> 
+
+
+</form>
+</body>
+</html>

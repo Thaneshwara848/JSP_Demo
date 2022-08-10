@@ -1,0 +1,20 @@
+
+public class Demo1WIthMySQL {
+	public static void main(String[] args) {
+		//5 
+		// 1 ) load the driver 
+		// 2) create the connection 
+		// create the statment 
+		// executer the statement 
+		// close the connection
+		
+		try {
+			
+		}
+		catch (Exception e) 
+		{
+		
+		}
+		
+	}
+}

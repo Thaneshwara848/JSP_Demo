@@ -1,0 +1,51 @@
+import java.util.Scanner;
+import java.sql.*;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+	
+//		Scanner sc = new Scanner(System.in);
+//		System.out.print("Enter ID :");
+//		int id= sc.nextInt();
+//		
+//		System.out.print("Enter Name :");
+//		String name= sc.next();
+//		
+//		System.out.print("Enter Age :");
+//		int age= sc.nextInt();
+//		
+//		System.out.print("Enter Salary ");
+//		float salary= sc.nextFloat();
+//		
+//		System.out.print("Enter Designation : ");
+//		String desig= sc.next();
+//		
+//		
+//		System.out.println("ID :"+id);
+//		System.out.println("NAME  :"+name);
+//		System.out.println("AGE  :"+age);
+//		System.out.println("SALARY :"+salary);
+//		System.out.println("DESIG :"+desig);
+//		
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","root","root");
+			Statement stmt= con.createStatement();
+			stmt.execute("insert inot myEmployees values(300,'Praksh',45,50000,'Clerk')");
+			con.close();
+			stmt.close();
+		} 
+		catch (Exception e)
+		{
+			System.out.println(e);
+		}
+		
+		
+		
+		
+
+	}
+
+}

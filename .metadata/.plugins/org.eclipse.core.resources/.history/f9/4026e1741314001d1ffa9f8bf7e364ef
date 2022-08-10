@@ -1,0 +1,56 @@
+import java.util.Scanner;
+import java.sql.*;
+
+public class Demo1 {
+
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter ID :");
+		int id= sc.nextInt();
+		
+		System.out.print("Enter Name :");
+		String name= sc.next();
+		
+		System.out.print("Enter Age :");
+		int age= sc.nextInt();
+		
+		System.out.print("Enter Salary ");
+		float salary= sc.nextFloat();
+		
+		System.out.print("Enter Designation : ");
+		String desig= sc.next();
+		
+		
+		System.out.println("ID :"+id);
+		System.out.println("NAME  :"+name);
+		System.out.println("AGE  :"+age);
+		System.out.println("SALARY :"+salary);
+		System.out.println("DESIG :"+desig);
+		
+		try
+		{
+			// JDBC and we jave to perfor 5 steps :
+			//1 : Load the driver   : 
+				Class.forName("com.mysql.jdbc.Driver");
+			//2  Creat the connection 
+				Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/emp","root","root");
+			//3 creating the statemnt 
+				Statement stmt= con.createStatement();
+			//4
+				stmt.execute("insert into MyEmployees values(300,'Suresh',35,50000,'Clerk')");
+			//5
+			
+		} 
+		catch (Exception e)
+		{
+			
+		}
+		
+		
+		
+		
+
+	}
+
+}

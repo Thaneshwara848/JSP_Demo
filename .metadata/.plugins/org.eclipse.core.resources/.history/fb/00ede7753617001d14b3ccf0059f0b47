@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="PINk">
+	<div style="text-align: center;">
+	
+	<form action="Register.html">
+	
+		<input type="submit" value="INSERT">
+	</form>
+	
+	
+	<form action="Register.html">
+	
+		<input type="submit" value="UPDATE">
+	</form>
+	
+	
+	<form action="Register.html">
+	
+		<input type="submit" value="INSERT">
+	</form>
+	
+	
+	<form action="Register.html">
+	
+		<input type="submit" value="INSERT">
+	</form>
+	
+	
+	</div>
+
+</body>
+</html>

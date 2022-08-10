@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="Register.jsp">
+		ID :  <input type="text" name="uid"><br>
+		
+		<input type="submit" value="DELET">  
+	</form>
+</body>
+</html>

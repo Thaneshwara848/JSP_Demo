@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body bgcolor="yellow">
+	<div>
+		<form action="" >
+		
+			UID : <input type="text" name="uid"><br>
+			UName :<input type="text" name="uname"><br>
+			UAge :<input" type="text" name="uage"><br>
+			USalary :<input type="text" name="usalary"><br>
+			uDesig :<input type="text" name="udesig"><br>
+			
+			<input type="submit" value="REGISTER">
+			<input type="reset">
+			 
+		
+		
+		</form>
+	</body>
+</html>

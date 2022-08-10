@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1> Hi Welcome to HTML pAGE 5+5  </h1>
+	
+	<form action="Demo.jsp">
+		ID :  <input type="text" name="uid">
+		Name : <input type="text" name="uname"><br>
+		 <input type="text" name="uname">
+		<input type="submit" value="CLICK">  
+	
+	</form>
+</body>
+</html>
